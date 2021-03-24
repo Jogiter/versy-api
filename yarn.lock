@@ -5609,6 +5609,11 @@ jws@^4.0.0:
     jwa "^2.0.0"
     safe-buffer "^5.0.1"
 
+kareem@2.3.1:
+  version "2.3.1"
+  resolved "https://npm-frontend-infra.deepexi.com/kareem/-/kareem-2.3.1.tgz#def12d9c941017fabfb00f873af95e9c99e1be87"
+  integrity sha1-3vEtnJQQF/q/sA+HOvlenJnhvoc=
+
 kareem@2.3.2:
   version "2.3.2"
   resolved "https://registry.npm.taobao.org/kareem/download/kareem-2.3.2.tgz#78c4508894985b8d38a0dc15e1a8e11078f2ca93"
@@ -6440,6 +6445,19 @@ moment-timezone@^0.5.21, moment-timezone@^0.5.31:
   resolved "https://registry.npm.taobao.org/moment/download/moment-2.29.1.tgz#b2be769fa31940be9eeea6469c075e35006fa3d3"
   integrity sha1-sr52n6MZQL6e7qZGnAdeNQBvo9M=
 
+mongodb@3.6.2:
+  version "3.6.2"
+  resolved "https://npm-frontend-infra.deepexi.com/mongodb/-/mongodb-3.6.2.tgz#1154a4ac107bf1375112d83a29c5cf97704e96b6"
+  integrity sha1-EVSkrBB78TdREtg6KcXPl3BOlrY=
+  dependencies:
+    bl "^2.2.1"
+    bson "^1.1.4"
+    denque "^1.4.1"
+    require_optional "^1.0.1"
+    safe-buffer "^5.1.2"
+  optionalDependencies:
+    saslprep "^1.0.0"
+
 mongodb@3.6.5:
   version "3.6.5"
   resolved "https://registry.npm.taobao.org/mongodb/download/mongodb-3.6.5.tgz#c27d786fd4d3c83dc19302483707d12a9d2aee5f"
@@ -6453,10 +6471,37 @@ mongodb@3.6.5:
   optionalDependencies:
     saslprep "^1.0.0"
 
+mongoose-float@^1.0.4:
+  version "1.0.4"
+  resolved "https://npm-frontend-infra.deepexi.com/mongoose-float/-/mongoose-float-1.0.4.tgz#abdda2c66320a8acf8a13a8b704c9b7ea4b5b840"
+  integrity sha1-q92ixmMgqKz4oTqLcEybfqS1uEA=
+
 mongoose-legacy-pluralize@1.0.2:
   version "1.0.2"
   resolved "https://registry.npm.taobao.org/mongoose-legacy-pluralize/download/mongoose-legacy-pluralize-1.0.2.tgz#3ba9f91fa507b5186d399fb40854bff18fb563e4"
   integrity sha1-O6n5H6UHtRhtOZ+0CFS/8Y+1Y+Q=
+
+mongoose-long@^0.3.2:
+  version "0.3.2"
+  resolved "https://npm-frontend-infra.deepexi.com/mongoose-long/-/mongoose-long-0.3.2.tgz#9e38773fc93c9c5ecfea200635878593ea577fb0"
+  integrity sha1-njh3P8k8nF7P6iAGNYeFk+pXf7A=
+
+mongoose@5.10.8:
+  version "5.10.8"
+  resolved "https://npm-frontend-infra.deepexi.com/mongoose/-/mongoose-5.10.8.tgz#e305dd5972c4d6b78418bd388342592ca5d8d633"
+  integrity sha1-4wXdWXLE1reEGL04g0JZLKXY1jM=
+  dependencies:
+    bson "^1.1.4"
+    kareem "2.3.1"
+    mongodb "3.6.2"
+    mongoose-legacy-pluralize "1.0.2"
+    mpath "0.7.0"
+    mquery "3.2.2"
+    ms "2.1.2"
+    regexp-clone "1.0.0"
+    safe-buffer "5.2.1"
+    sift "7.0.1"
+    sliced "1.0.1"
 
 mongoose@^5.5.13:
   version "5.12.2"
@@ -6488,10 +6533,26 @@ move-concurrently@^1.0.1:
     rimraf "^2.5.4"
     run-queue "^1.0.3"
 
+mpath@0.7.0:
+  version "0.7.0"
+  resolved "https://npm-frontend-infra.deepexi.com/mpath/-/mpath-0.7.0.tgz#20e8102e276b71709d6e07e9f8d4d0f641afbfb8"
+  integrity sha1-IOgQLidrcXCdbgfp+NTQ9kGvv7g=
+
 mpath@0.8.3:
   version "0.8.3"
   resolved "https://registry.npm.taobao.org/mpath/download/mpath-0.8.3.tgz#828ac0d187f7f42674839d74921970979abbdd8f"
   integrity sha1-gorA0Yf39CZ0g510khlwl5q73Y8=
+
+mquery@3.2.2:
+  version "3.2.2"
+  resolved "https://npm-frontend-infra.deepexi.com/mquery/-/mquery-3.2.2.tgz#e1383a3951852ce23e37f619a9b350f1fb3664e7"
+  integrity sha1-4Tg6OVGFLOI+N/YZqbNQ8fs2ZOc=
+  dependencies:
+    bluebird "3.5.1"
+    debug "3.1.0"
+    regexp-clone "^1.0.0"
+    safe-buffer "5.1.2"
+    sliced "1.0.1"
 
 mquery@3.2.4:
   version "3.2.4"
@@ -9226,6 +9287,19 @@ strapi-connector-bookshelf@3.5.3:
     p-map "4.0.0"
     pluralize "^8.0.0"
     rimraf "3.0.2"
+    strapi-utils "3.5.3"
+
+strapi-connector-mongoose@^3.5.3:
+  version "3.5.3"
+  resolved "https://npm-frontend-infra.deepexi.com/strapi-connector-mongoose/-/strapi-connector-mongoose-3.5.3.tgz#4d294d85bcb631c0235cb408640a9998ea24a94c"
+  integrity sha1-TSlNhby2McAjXLQIZAqZmOokqUw=
+  dependencies:
+    lodash "4.17.20"
+    mongoose "5.10.8"
+    mongoose-float "^1.0.4"
+    mongoose-long "^0.3.2"
+    pluralize "^8.0.0"
+    semver "^7.3.4"
     strapi-utils "3.5.3"
 
 strapi-database@3.5.3:
